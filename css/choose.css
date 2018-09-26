@@ -1,0 +1,128 @@
+*{
+  padding: 0px;
+	margin: 0px;
+	font-family: 'Lato', sans-serif;
+	font-family: 'Open Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
+  font-family: 'Noto serif', sans-serif;
+  font-family: 'Varela round', sans-serif;
+}
+
+
+
+.importants{
+  background: linear-gradient(0deg,#22d5ac,#ffffff);
+    width: 100%;
+    /* box-shadow: 0 10px 20px rgba(255,255,255,0.19), 0 6px 6px rgba(255,255,255,0.23); */
+  }
+.puser{
+  float: left;
+  width: 50%;
+  clear: both;
+  padding: 50px 0px;
+  text-align: center;
+  font-size: 100%;
+  color: white;
+  font-size: 200%;
+}
+.puser span{
+  font-weight: bolder;
+}
+.logout{
+  padding: 50px 10px;
+  text-align: center;
+  font-size: 100%;
+}
+.logout a{
+  background: white;
+  color: #22d5ac;
+  padding: 5px;
+  text-decoration: none;
+  font-size: 200%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.footer-pos{
+  /*background-image:url(img/1.jpg);*/
+  background-color: #22d5ac;
+  color: white;
+  padding: 30px;
+}
+.footer-wrap img{
+  width: 40%;
+  padding: 0% 30%;
+}
+.footer-wrap p{
+  text-align: center;
+  padding: 10px 0px 10px 0px;
+}
+.footer-wrap h1{
+  text-align: center;
+  padding: 10px 0px 20px 0px;
+}
+.name-pos{
+  width: 33.33%;
+  float: left;
+  text-align: center;
+  padding: 20px 0px;
+}
+hr{
+  color: white;
+  width: 70%;
+  margin: auto;
+}
+.heading h1{
+  margin: 0px 0px 0px 0px;
+    padding: 350px;
+    text-align: center;
+    background-image:url(../img/9.jpg);
+  	background-size: cover;
+  	background-attachment:fixed;
+    color: white;
+    font-size: -webkit-xxx-large;
+    letter-spacing: 0.5em;
+	}
+
+
+  .module-wrap{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+    clear: both;
+    padding: 20px 0px;
+    /* margin: 10px 0px; */
+    background-color: #38d9b4;
+
+  }
+
+  .module-wrap a{
+    clear: both;
+    margin: 10px 0px;
+    padding: 30px 0px;
+    text-decoration: none;
+    font-size: xx-large;
+    color: #551a8b;
+    text-transform: capitalize;
+  }
+  .module-wrap a:hover{
+    text-decoration: underline;
+  }
+
+  .box-wrap1 p{
+    padding: 150px 0px;
+  	font-size: xx-large;
+  	background-image:url(img/7.jpg);
+  	background-attachment: scroll;
+  	background-size: cover;
+  	background-repeat: no-repeat;
+  	background-position: center;
+  	width: 100%;
+  	text-align: center;
+  	color: white;
+  	border-radius: 10px;
+  	float:left;
+  		letter-spacing: 0.5em;
+  }

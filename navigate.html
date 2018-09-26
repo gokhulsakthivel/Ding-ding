@@ -1,0 +1,501 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+    <script src="aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-event-set-component@3.0.3/dist/aframe-event-set-component.min.js"></script>
+    <link rel="icon" href="img/Ding-ding.png" sizes="16x16" type="image/png">
+    <title>Navigate</title>
+    </head><body class="a-body ">
+      <a-scene>
+        <!--floor-->
+        <a-box position="0 0 0" height="0.2" width="200" depth="200" color="#DFBC4E"></a-box>
+        <a-box position="0 10 -20" height="0.2" width="162" depth="135" color="#DFBC4E"></a-box>
+
+        <!--compounds walls-->
+
+        <!--left wall-->
+        <a-box position="-80 5 -20" height="10" width="1" depth="120" color="#F58B38"></a-box>
+        <!--right wall-->
+        <a-box position="80 5 -20" height="10" width="1" depth="120" color="#F58B38"></a-box>
+        <!--back wall-->
+        <a-box position="0 5 -80" height="10" width="161" depth="1" color="#1D42F9"></a-box>
+        <!--front-l wall-->
+        <a-box position="-40 5 40" height="10" width="81" depth="1" color="#1D42F9" opacity="1"></a-box>
+        <!--front-r wall-->
+        <a-box position="60 5 40" height="10" width="41" depth="1" color="#1D42F9" opacity="1"></a-box>
+
+
+        <!--front room walls-->
+        <!--f1 wall-->
+        <a-box position="0 5 30" height="10" width="1" depth="21" color="#F58B38" opacity="1"></a-box>
+        <!--f2 wall-->
+        <a-box position="-20 5 30" height="10" width="1" depth="21" color="#F58B38" opacity="1"></a-box>
+        <!--f3 wall-->
+        <a-box position="-40 5 30" height="10" width="1" depth="21" color="#F58B38" opacity="1"></a-box>
+        <!--f4 wall-->
+        <a-box position="-60 5 30" height="10" width="1" depth="21" color="#F58B38" opacity="1"></a-box>
+
+
+        <!--left room walls-->
+        <!--l1 wall-->
+        <a-box position="-70 5 0" height="10" width="21" depth="1" color="#1D42F9" opacity="1"></a-box>
+        <!--l2 wall-->
+        <a-box position="-70 5 -20" height="10" width="21" depth="1" color="#1D42F9" opacity="1"></a-box>
+        <!--l3 wall-->
+        <a-box position="-70 5 -40" height="10" width="21" depth="1" color="#1D42F9" opacity="1"></a-box>
+        <!--l4 wall-->
+        <a-box position="-70 5 -60" height="10" width="21" depth="1" color="#1D42F9" opacity="1"></a-box>
+
+
+        <!--back room walls-->
+        <!--b1 wall-->
+        <a-box position="-40 5 -70" height="10" width="1" depth="21" color="#F58B38" opacity="1"></a-box>
+        <!--b2 wall-->
+        <a-box position="-20 5 -70" height="10" width="1" depth="21" color="#F58B38" opacity="1"></a-box>
+        <!--b3 wall-->
+        <a-box position="0 5 -70" height="10" width="1" depth="21" color="#F58B38" opacity="1"></a-box>
+        <!--b4 wall-->
+        <a-box position="20 5 -70" height="10" width="1" depth="21" color="#F58B38" opacity="1"></a-box>
+        <!--b5 wall-->
+        <a-box position="40 5 -70" height="10" width="1" depth="21" color="#F58B38" opacity="1"></a-box>
+        <!--b6 wall-->
+        <a-box position="60 5 -70" height="10" width="1" depth="21" color="#F58B38" opacity="1"></a-box>
+
+
+
+        <!--right room walls-->
+        <!--r1 wall-->
+        <a-box position="50 5 20" height="10" width="21" depth="1" color="#F58B38" opacity="1"></a-box>
+        <!--r2 wall-->
+        <a-box position="60 5 30" height="10" width="1" depth="21" color="#F58B38" opacity="1"></a-box>
+        <!--p1 wall-->
+        <a-box position="60 5 0" height="10" width="41" depth="1" color="#1D42F9" opacity="1"></a-box>
+        <!--c1 wall-->
+        <a-box position="60 5 -50" height="10" width="41" depth="1" color="#1D42F9" opacity="1"></a-box>
+
+
+
+        <!--front close room walls-->
+        <!--fc1 wall-->
+        <a-box position="-8 5 20" height="10" width="16" depth="1" color="#1D42F9" opacity="1"></a-box>
+        <!--fc2 wall-->
+        <a-box position="-28 5 20" height="10" width="16" depth="1" color="#1D42F9" opacity="1"></a-box>
+        <!--fc3 wall-->
+        <a-box position="-48 5 20" height="10" width="16" depth="1" color="#1D42F9" opacity="1"></a-box>
+        <!--fc4 wall-->
+        <a-box position="-68 5 20" height="10" width="16" depth="1" color="#1D42F9" opacity="1"></a-box>
+
+
+
+        <!--left close room walls-->
+        <!--lc1 wall-->
+        <a-box position="-60 5 -8" height="10" width="16" depth="1" color="#F58B38" opacity="1" rotation="0 90 0"></a-box>
+        <!--lc2 wall-->
+        <a-box position="-60 5 -28" height="10" width="16" depth="1" color="#F58B38" opacity="1" rotation="0 90 0"></a-box>
+        <!--lc3 wall-->
+        <a-box position="-60 5 -48" height="10" width="16" depth="1" color="#F58B38" opacity="1" rotation="0 90 0"></a-box>
+        <!--lc4 wall-->
+        <a-box position="-60 5 -68" height="10" width="16" depth="1" color="#F58B38" opacity="1" rotation="0 90 0"></a-box>
+
+
+
+        <!--back close room walls-->
+        <!--bc1 wall-->
+        <a-box position="-32 5 -60" height="10" width="16" depth="1" color="#1D42F9" opacity="1" rotation="0 0 0"></a-box>
+        <!--bc2 wall-->
+        <a-box position="-12 5 -60" height="10" width="16" depth="1" color="#1D42F9" opacity="1" rotation="0 0 0"></a-box>
+        <!--bc3 wall-->
+        <a-box position="8 5 -60" height="10" width="16" depth="1" color="#1D42F9" opacity="1" rotation="0 0 0"></a-box>
+        <!--bc4 wall-->
+        <a-box position="28 5 -60" height="10" width="16" depth="1" color="#1D42F9" opacity="1" rotation="0 0 0"></a-box>
+        <!--bc5 wall-->
+        <a-box position="48 5 -60" height="10" width="16" depth="1" color="#1D42F9" opacity="1" rotation="0 0 0"></a-box>
+        <!--bc6 wall-->
+        <a-box position="68 5 -60" height="10" width="16" depth="1" color="#1D42F9" opacity="1" rotation="0 0 0"></a-box>
+
+
+
+        <!--right close room walls-->
+        <!--rc1 wall-->
+        <a-box position="40 5 -30" height="10" width="1" depth="40" color="#F58B38" opacity="1"></a-box>
+        <!--rc2 wall-->
+        <a-box position="40 5 8" height="10" width="1" depth="16" color="#F58B38" opacity="1"></a-box>
+        <!--rc3 wall-->
+        <a-box position="40 5 28" height="10" width="1" depth="16" color="#F58B38" opacity="1"></a-box>
+
+
+
+        <!--New room walls-->
+        <!--n1 wall-->
+        <a-box position="-10 5 0" height="10" width="61" depth="1" color="#1D42F9" opacity="1" rotation="0 0 0"></a-box>
+        <!--n2 wall-->
+        <a-box position="-40 5 -20" height="10" width="1" depth="40" color="#F58B38" opacity="1" rotation="0 0 0"></a-box>
+        <!--n3 wall-->
+        <a-box position="-10 5 -40" height="10" width="61" depth="1" color="#1D42F9" opacity="1" rotation="0 0 0"></a-box>
+        <!--n4 wall-->
+        <a-box position="20 5 -25" height="10" width="1" depth="31" color="#F58B38" opacity="1" rotation="0 0 0"></a-box>
+
+
+
+
+        <!--top close room walls-->
+        <!--fct1 wall-->
+        <a-box position="-40 9 20" height="2" width="81" depth="1" color="#1D42F9" opacity="1" rotation="0 0 0"></a-box>
+        <!--lct1 wall-->
+        <a-box position="-60 9 -40" height="2" width="1" depth="81" color="#1D42F9" opacity="1" rotation="0 0 0"></a-box>
+        <!--rct2 wall-->
+        <a-box position="40 9 5" height="2" width="1" depth="71" color="#F58B38" opacity="1" rotation="0 0 0"></a-box>
+        <!--bct3 wall-->
+        <a-box position="20 9 -60" height="2" width="121" depth="1" color="#1D42F9" opacity="1" rotation="0 0 0"></a-box>
+        <!--nct4 wall-->
+        <a-box position="20 9 -20" height="2" width="1" depth="40" color="#F58B38" opacity="1" rotation="0 0 0"></a-box>
+
+
+
+
+       <!--cube 1-
+       <a-box position="0 2.5 95" height="5" width="10" depth="1" color="green"></a-box>
+       <!--op-t
+       <a-text value="Operation Theatre" position=" -2.75 4 96" scale="3 3 3" color="white" height="1" width="5"
+       event-set__enter="_event: click; _target: #g-w; visible: false"
+       event-set__enter1="_event: click; _target: #op-t; visible: true"
+       event-set__enter2="_event: click; _target: #op-t1; visible: true">
+       </a-text>
+       <!--opt way
+       <a-box id="op-t"  position="30 1 25" height="0.5" width="5" depth="150" color="green" visible="false"></a-box>
+       <a-box id="op-t1"  position="10 1 -50" height="0.5" width="41" depth="5" color="green" visible="false"></a-box>
+       <a-text value="General Ward" position="-2.25 3 96" scale="3 3 3" color="white" height="1" width="5"
+       event-set__enter="_event: click; _target: #g-w; visible: true"
+       event-set__enter1="_event: click; _target: #op-t; visible: false"
+       event-set__enter2="_event: click;  _target: #op-t1; visible: false">
+       </a-text>
+       <a-box id="g-w"  position="30 1 50" height="0.5" width="1" depth="105" color="green" visible="false"></a-box>
+      -->
+
+
+      <a-text value="O P E R A T I O N   T H E A T R E" position="5 9 -59" scale="5 5 5" color="white" height="1" width="5" rotation="0 0 0"></a-text>
+      <a-text value="I C U" position="-59.5 9 -20" scale="5 5 5" color="white" height="1" width="5" rotation="0 90 0"></a-text>
+      <a-text value="LAB" position="-59.5 9 -70" scale="5 5 5" color="white" height="1" width="5" rotation="0 90 0"></a-text>
+      <a-text value="E M E R G E N C Y   W A R D" position="-30 9 19.5" scale="5 5 5" color="white" height="1" width="5" rotation="0 180 0"></a-text>
+      <a-text value="G E N E R A L  W A R D" position="20.5 9 -15" scale="5 5 5" color="white" height="1" width="5" rotation="0 90 0"></a-text>
+      <a-text value="D O R M A T R Y" position="39.5 9 -15" scale="5 5 5" color="white" height="1" width="5" rotation="0 -90 0"></a-text>
+      <a-text value="P H A R M A C Y" position="39.5 9 10" scale="5 5 5" color="white" height="1" width="5" rotation="0 -90 0"></a-text>
+      <a-text value="R E C E P T I O N" position="39.5 9 30" scale="5 5 5" color="white" height="1" width="5" rotation="0 -90 0"></a-text>
+
+
+      <!--cube 1-->
+       <a-box position="0 2.5 95" height="5" width="10" depth="1" color="green" opacity="1"></a-box>
+       <a-box position="0 4 95.1" height="1" width="10" depth="1" color="purple"opacity="0.5"
+       event-set__enter="_event: click; _target: #p1; visible: true"
+       event-set__enter1="_event: click; _target: #p2; visible: true"
+       event-set__enter2="_event: click;  _target: #r1; visible: false"
+       event-set__enter3="_event: click;  _target: #r2; visible: false"
+       event-set__enter4="_event: click;  _target: #g1; visible: false"
+       event-set__enter5="_event: click;  _target: #g2; visible: false"
+       event-set__enter7="_event: click;  _target: #e1; visible: false"
+       event-set__enter8="_event: click;  _target: #e2; visible: false"
+       event-set__enter9="_event: click; _target: #r3; visible: false"
+       event-set__enter10="_event: click; _target: #r4; visible: false"
+       event-set__enter11="_event: click;  _target: #rr1; visible: false"
+       event-set__enter14="_event: click;  _target: #i2; visible: false"
+       event-set__enter12="_event: click;  _target: #o1; visible: false"
+       event-set__enter15="_event: click;  _target: #o2; visible: false"
+       event-set__enter16="_event: click;  _target: #o3; visible: false"></a-box>
+       <a-box position="0 3 95.1" height="1" width="10" depth="1" color="purple" opacity="0.5"
+       event-set__enter="_event: click; _target: #p1; visible: true"
+       event-set__enter1="_event: click; _target: #p2; visible: true"
+       event-set__enter2="_event: click;  _target: #r1; visible: false"
+       event-set__enter3="_event: click;  _target: #r2; visible: false"
+       event-set__enter4="_event: click;  _target: #g1; visible: false"
+       event-set__enter5="_event: click;  _target: #g2; visible: false"
+       event-set__enter7="_event: click;  _target: #e1; visible: false"
+       event-set__enter8="_event: click;  _target: #e2; visible: false"
+       event-set__enter9="_event: click; _target: #r3; visible: false"
+       event-set__enter10="_event: click; _target: #r4; visible: false"
+       event-set__enter11="_event: click;  _target: #rr1; visible: false"
+       event-set__enter14="_event: click;  _target: #i2; visible: false"
+       event-set__enter12="_event: click;  _target: #o1; visible: false"
+       event-set__enter15="_event: click;  _target: #o2; visible: false"
+       event-set__enter16="_event: click;  _target: #o3; visible: false"></a-box>
+       <a-box position="0 2 95.1" height="1" width="10" depth="1" color="purple" opacity="0.5"
+       event-set__enter="_event: click; _target: #p1; visible: true"
+       event-set__enter1="_event: click; _target: #p2; visible: true"
+       event-set__enter2="_event: click;  _target: #r1; visible: false"
+       event-set__enter3="_event: click;  _target: #r2; visible: false"
+       event-set__enter4="_event: click;  _target: #g1; visible: false"
+       event-set__enter5="_event: click;  _target: #g2; visible: false"
+       event-set__enter7="_event: click;  _target: #e1; visible: false"
+       event-set__enter8="_event: click;  _target: #e2; visible: false"
+       event-set__enter9="_event: click; _target: #r3; visible: false"
+       event-set__enter10="_event: click; _target: #r4; visible: false"
+       event-set__enter11="_event: click;  _target: #rr1; visible: false"
+       event-set__enter14="_event: click;  _target: #i2; visible: false"
+       event-set__enter12="_event: click;  _target: #o1; visible: false"
+       event-set__enter15="_event: click;  _target: #o2; visible: false"
+       event-set__enter16="_event: click;  _target: #o3; visible: false"></a-box>
+       <a-box position="0 1 95.1" height="1" width="10" depth="1" color="purple" opacity="0.5"
+       event-set__enter="_event: click; _target: #p1; visible: true"
+       event-set__enter1="_event: click; _target: #p2; visible: true"
+       event-set__enter2="_event: click;  _target: #r1; visible: false"
+       event-set__enter3="_event: click;  _target: #r2; visible: false"
+       event-set__enter4="_event: click;  _target: #g1; visible: false"
+       event-set__enter5="_event: click;  _target: #g2; visible: false"
+       event-set__enter7="_event: click;  _target: #e1; visible: true"
+       event-set__enter8="_event: click;  _target: #e2; visible: true"
+       event-set__enter9="_event: click; _target: #r3; visible: false"
+       event-set__enter10="_event: click; _target: #r4; visible: false"
+       event-set__enter11="_event: click;  _target: #rr1; visible: false"
+       event-set__enter14="_event: click;  _target: #i2; visible: false"
+       event-set__enter12="_event: click;  _target: #o1; visible: false"
+       event-set__enter15="_event: click;  _target: #o2; visible: false"
+       event-set__enter16="_event: click;  _target: #o3; visible: false"></a-box>
+
+       <a-text value="Pharmacy " position=" -2.75 4 96" scale="3 3 3" color="white" height="1" width="5"
+       event-set__enter="_event: click; _target: #p1; visible: true"
+       event-set__enter1="_event: click; _target: #p2; visible: true"
+       event-set__enter2="_event: click;  _target: #r1; visible: false"
+       event-set__enter3="_event: click;  _target: #r2; visible: false"
+       event-set__enter4="_event: click;  _target: #g1; visible: false"
+       event-set__enter5="_event: click;  _target: #g2; visible: false"
+       event-set__enter7="_event: click;  _target: #e1; visible: false"
+       event-set__enter8="_event: click;  _target: #e2; visible: false"
+       event-set__enter9="_event: click; _target: #r3; visible: false"
+       event-set__enter10="_event: click; _target: #r4; visible: false"
+       event-set__enter11="_event: click;  _target: #rr1; visible: false"
+       event-set__enter14="_event: click;  _target: #i2; visible: false"
+       event-set__enter12="_event: click;  _target: #o1; visible: false"
+       event-set__enter15="_event: click;  _target: #o2; visible: false"
+       event-set__enter16="_event: click;  _target: #o3; visible: false"></a-text>
+       <a-text value="Reception" position=" -2.75 3 96" scale="3 3 3" color="white" height="1" width="5"
+       event-set__enter="_event: click; _target: #r1; visible: true"
+       event-set__enter1="_event: click; _target: #r2; visible: true"
+       event-set__enter2="_event: click;  _target: #p1; visible: false"
+       event-set__enter3="_event: click;  _target: #p2; visible: false"
+       event-set__enter4="_event: click;  _target: #g1; visible: false"
+       event-set__enter5="_event: click;  _target: #g2; visible: false"
+       event-set__enter7="_event: click;  _target: #e1; visible: false"
+       event-set__enter8="_event: click;  _target: #e2; visible: false"
+       event-set__enter9="_event: click; _target: #r3; visible: false"
+       event-set__enter10="_event: click; _target: #r4; visible: false"
+       event-set__enter11="_event: click;  _target: #rr1; visible: false"
+       event-set__enter14="_event: click;  _target: #i2; visible: false"
+       event-set__enter12="_event: click;  _target: #o1; visible: false"
+       event-set__enter15="_event: click;  _target: #o2; visible: false"
+       event-set__enter16="_event: click;  _target: #o3; visible: false"></a-text>
+       <a-text value="General ward" position=" -2.75 2 96" scale="3 3s 3" color="white" height="1" width="5"
+       event-set__enter="_event: click; _target: #r1; visible: false"
+       event-set__enter1="_event: click; _target: #r2; visible: false"
+       event-set__enter2="_event: click;  _target: #p1; visible: false"
+       event-set__enter3="_event: click;  _target: #p2; visible: false"
+       event-set__enter4="_event: click;  _target: #g1; visible: true"
+       event-set__enter5="_event: click;  _target: #g2; visible: true"
+       event-set__enter7="_event: click;  _target: #e1; visible: false"
+       event-set__enter8="_event: click;  _target: #e2; visible: false"
+       event-set__enter9="_event: click; _target: #r3; visible: false"
+       event-set__enter10="_event: click; _target: #r4; visible: false"
+       event-set__enter14="_event: click;  _target: #i2; visible: false"
+       event-set__enter12="_event: click;  _target: #o1; visible: false"
+       event-set__enter15="_event: click;  _target: #o2; visible: false"
+       event-set__enter16="_event: click;  _target: #o3; visible: false"></a-text>
+       <a-text value="Emergency ward" position=" -2.75 1 96" scale="3 3 3" color="white" height="1" width="5"
+       event-set__enter="_event: click; _target: #r1; visible: false"
+       event-set__enter1="_event: click; _target: #r2; visible: false"
+       event-set__enter2="_event: click;  _target: #p1; visible: false"
+       event-set__enter3="_event: click;  _target: #p2; visible: false"
+       event-set__enter4="_event: click;  _target: #g1; visible: false"
+       event-set__enter5="_event: click;  _target: #g2; visible: false"
+       event-set__enter7="_event: click;  _target: #e1; visible: true"
+       event-set__enter8="_event: click;  _target: #e2; visible: true"
+       event-set__enter9="_event: click; _target: #r3; visible: false"
+       event-set__enter10="_event: click; _target: #r4; visible: false"
+       event-set__enter11="_event: click;  _target: #rr1; visible: false"
+       event-set__enter14="_event: click;  _target: #i2; visible: false"
+       event-set__enter12="_event: click;  _target: #o1; visible: false"
+       event-set__enter15="_event: click;  _target: #o2; visible: false"
+       event-set__enter16="_event: click;  _target: #o3; visible: false"></a-text>
+
+
+
+
+      <!--cube 2-->
+      <a-box position="-78.5 2.5 5" height="5" width="1" depth="10" color="green" visible="true"opacity="0.5"></a-box>
+      <a-box position="-78.4 4 5" height="1" width="1" depth="10" color="purple" visible="true"opacity="0.5"
+       event-set__enter="_event: click; _target: #r1; visible: false"
+       event-set__enter1="_event: click; _target: #r2; visible: false"
+       event-set__enter2="_event: click;  _target: #p1; visible: false"
+       event-set__enter3="_event: click;  _target: #p2; visible: false"
+       event-set__enter4="_event: click;  _target: #g1; visible: false"
+       event-set__enter5="_event: click;  _target: #g2; visible: false"
+       event-set__enter7="_event: click;  _target: #e1; visible: false"
+       event-set__enter8="_event: click;  _target: #e2; visible: false"
+       event-set__enter9="_event: click; _target: #r3; visible: true"
+       event-set__enter10="_event: click; _target: #r4; visible: true"
+       event-set__enter11="_event: click;  _target: #rr1; visible: false"
+       event-set__enter14="_event: click;  _target: #i2; visible: false"
+       event-set__enter12="_event: click;  _target: #o1; visible: false"
+       event-set__enter15="_event: click;  _target: #o2; visible: false"
+       event-set__enter16="_event: click;  _target: #o3; visible: false"></a-box>
+      <a-box position="-78.4 3 5" height="1" width="1" depth="10" color="purple" visible="true"opacity="0.5"
+      event-set__enter="_event: click; _target: #r1; visible: false"
+      event-set__enter1="_event: click; _target: #r2; visible: false"
+      event-set__enter2="_event: click;  _target: #p1; visible: false"
+      event-set__enter3="_event: click;  _target: #p2; visible: false"
+      event-set__enter4="_event: click;  _target: #g1; visible: false"
+      event-set__enter5="_event: click;  _target: #g2; visible: false"
+      event-set__enter7="_event: click;  _target: #e1; visible: false"
+      event-set__enter8="_event: click;  _target: #e2; visible: false"
+      event-set__enter9="_event: click; _target: #r3; visible: false"
+      event-set__enter10="_event: click; _target: #r4; visible: false"
+      event-set__enter11="_event: click;  _target: #rr1; visible: true"
+      event-set__enter14="_event: click;  _target: #i2; visible: false"
+      event-set__enter12="_event: click;  _target: #o1; visible: false"
+      event-set__enter15="_event: click;  _target: #o2; visible: false"
+      event-set__enter16="_event: click;  _target: #o3; visible: false"></a-box>
+      <a-box position="-78.4 2 5" height="1" width="1" depth="10" color="purple" visible="true"opacity="0.5"
+      event-set__enter="_event: click; _target: #r1; visible: false"
+      event-set__enter1="_event: click; _target: #r2; visible: false"
+      event-set__enter2="_event: click;  _target: #p1; visible: false"
+      event-set__enter3="_event: click;  _target: #p2; visible: false"
+      event-set__enter4="_event: click;  _target: #g1; visible: false"
+      event-set__enter5="_event: click;  _target: #g2; visible: false"
+      event-set__enter7="_event: click;  _target: #e1; visible: false"
+      event-set__enter8="_event: click;  _target: #e2; visible: false"
+      event-set__enter9="_event: click; _target: #r3; visible: false"
+      event-set__enter10="_event: click; _target: #r4; visible: false"
+      event-set__enter11="_event: click;  _target: #rr1; visible: false"
+      event-set__enter14="_event: click;  _target: #i2; visible: true"
+      event-set__enter12="_event: click;  _target: #o1; visible: false"
+      event-set__enter15="_event: click;  _target: #o2; visible: false"
+      event-set__enter16="_event: click;  _target: #o3; visible: false"></a-box>
+      <a-box position="-78.4 1 5" height="1" width="1" depth="10" color="purple" visible="true"opacity="0.5"
+      event-set__enter="_event: click; _target: #r1; visible: false"
+      event-set__enter1="_event: click; _target: #r2; visible: false"
+      event-set__enter2="_event: click;  _target: #p1; visible: false"
+      event-set__enter3="_event: click;  _target: #p2; visible: false"
+      event-set__enter4="_event: click;  _target: #g1; visible: false"
+      event-set__enter5="_event: click;  _target: #g2; visible: false"
+      event-set__enter7="_event: click;  _target: #e1; visible: false"
+      event-set__enter8="_event: click;  _target: #e2; visible: false"
+      event-set__enter9="_event: click; _target: #r3; visible: false"
+      event-set__enter10="_event: click; _target: #r4; visible: false"
+      event-set__enter11="_event: click;  _target: #rr1; visible: false"
+      event-set__enter14="_event: click;  _target: #i2; visible: false"
+      event-set__enter12="_event: click;  _target: #o1; visible: true"
+      event-set__enter15="_event: click;  _target: #o2; visible: true"
+      event-set__enter16="_event: click;  _target: #o3; visible: true"></a-box>
+      <a-text value="Lab" position="-77.75 4 7" scale="3 3 3" color="white" height="1" width="5" rotation="0 90 0"
+      event-set__enter="_event: click; _target: #r1; visible: false"
+       event-set__enter1="_event: click; _target: #r2; visible: false"
+       event-set__enter2="_event: click;  _target: #p1; visible: false"
+       event-set__enter3="_event: click;  _target: #p2; visible: false"
+       event-set__enter4="_event: click;  _target: #g1; visible: false"
+       event-set__enter5="_event: click;  _target: #g2; visible: false"
+       event-set__enter7="_event: click;  _target: #e1; visible: false"
+       event-set__enter8="_event: click;  _target: #e2; visible: false"
+       event-set__enter9="_event: click; _target: #r3; visible: true"
+       event-set__enter10="_event: click; _target: #r4; visible: true"
+       event-set__enter11="_event: click;  _target: #rr1; visible: false"
+       event-set__enter14="_event: click;  _target: #i2; visible: false"
+       event-set__enter12="_event: click;  _target: #o1; visible: false"
+       event-set__enter15="_event: click;  _target: #o2; visible: false"
+       event-set__enter16="_event: click;  _target: #o3; visible: false"></a-text>
+      <a-text value="Restroom" position=" -77.75 3 7" scale="3 3 3" color="white" height="1" width="5" rotation="0 90 0"
+      event-set__enter="_event: click; _target: #r1; visible: false"
+      event-set__enter1="_event: click; _target: #r2; visible: false"
+      event-set__enter2="_event: click;  _target: #p1; visible: false"
+      event-set__enter3="_event: click;  _target: #p2; visible: false"
+      event-set__enter4="_event: click;  _target: #g1; visible: false"
+      event-set__enter5="_event: click;  _target: #g2; visible: false"
+      event-set__enter7="_event: click;  _target: #e1; visible: false"
+      event-set__enter8="_event: click;  _target: #e2; visible: false"
+      event-set__enter9="_event: click; _target: #r3; visible: false"
+      event-set__enter10="_event: click; _target: #r4; visible: false"
+      event-set__enter11="_event: click;  _target: #rr1; visible: true"
+      event-set__enter14="_event: click;  _target: #i2; visible: false"
+      event-set__enter12="_event: click;  _target: #o1; visible: false"
+      event-set__enter15="_event: click;  _target: #o2; visible: false"
+      event-set__enter16="_event: click;  _target: #o3; visible: false"></a-text>
+      <a-text value="I C U" position=" -77.75 2 7" scale="3 3 3" color="white" height="1" width="5" rotation="0 90 0"
+      event-set__enter="_event: click; _target: #r1; visible: false"
+      event-set__enter1="_event: click; _target: #r2; visible: false"
+      event-set__enter2="_event: click;  _target: #p1; visible: false"
+      event-set__enter3="_event: click;  _target: #p2; visible: false"
+      event-set__enter4="_event: click;  _target: #g1; visible: false"
+      event-set__enter5="_event: click;  _target: #g2; visible: false"
+      event-set__enter7="_event: click;  _target: #e1; visible: false"
+      event-set__enter8="_event: click;  _target: #e2; visible: false"
+      event-set__enter9="_event: click; _target: #r3; visible: false"
+      event-set__enter10="_event: click; _target: #r4; visible: false"
+      event-set__enter11="_event: click;  _target: #rr1; visible: false"
+      event-set__enter14="_event: click;  _target: #i2; visible: true"
+      event-set__enter12="_event: click;  _target: #o1; visible: false"
+      event-set__enter15="_event: click;  _target: #o2; visible: false"
+      event-set__enter16="_event: click;  _target: #o3; visible: false"></a-text>
+      <a-text value="Operation theatre" position=" -77.75 1 7" scale="3 3 3" color="white" height="1" width="5" rotation="0 90 0"
+      event-set__enter="_event: click; _target: #r1; visible: false"
+      event-set__enter1="_event: click; _target: #r2; visible: false"
+      event-set__enter2="_event: click;  _target: #p1; visible: false"
+      event-set__enter3="_event: click;  _target: #p2; visible: false"
+      event-set__enter4="_event: click;  _target: #g1; visible: false"
+      event-set__enter5="_event: click;  _target: #g2; visible: false"
+      event-set__enter7="_event: click;  _target: #e1; visible: false"
+      event-set__enter8="_event: click;  _target: #e2; visible: false"
+      event-set__enter9="_event: click; _target: #r3; visible: false"
+      event-set__enter10="_event: click; _target: #r4; visible: false"
+      event-set__enter11="_event: click;  _target: #rr1; visible: false"
+      event-set__enter14="_event: click;  _target: #i2; visible: false"
+      event-set__enter12="_event: click;  _target: #o1; visible: true"
+      event-set__enter15="_event: click;  _target: #o2; visible: true"
+      event-set__enter16="_event: click;  _target: #o3; visible: true"></a-text>
+
+
+      <!--direction-->
+      <!--pharmacy-->
+      <a-box id="p1" position="30 0.5 55" height="1" width="1" depth="75" color="green" visible="false"></a-box>
+      <a-box id="p2" position="35 0.5 17.5" height="1" width="11" depth="1" color="green" visible="false"></a-box>
+      <!--reception-->
+      <a-box id="r1" position="30 0.5 65" height="1" width="1" depth="55" color="green" visible="false"></a-box>
+      <a-box id="r2" position="35 0.5 37.5" height="1" width="11" depth="1" color="green" visible="false"></a-box>
+
+      <!--emergency & icu-->
+      <a-box id="e1" position="30 0.5 55" height="1" width="1" depth="85" color="green" visible="false"></a-box>
+      <a-box id="e2" position="-10 0.5 12.5" height="1" width="81" depth="1" color="green" visible="false"></a-box>
+      <a-box id="i2" position="-50 0.5 -2.5" height="1" width="1" depth="31" color="green" visible="false"></a-box>
+
+      <!--lab-->
+      <a-box id="r3" position="-50 0.5 -30" height="1" width="1" depth="96" color="green" visible="false"></a-box>
+      <a-box id="r4" position="-55 0.5 -77.5" height="1" width="10" depth="1" color="green" visible="false"></a-box>
+
+      <!--General ward-->
+      <a-box id="g1" position="30 0.5 45" height="1" width="1" depth="100" color="green" visible="false"></a-box>
+      <a-box id="g2" position="25 0.5 -5" height="1" width="11" depth="1" color="green" visible="false"></a-box>
+
+      <!--Dormantry-->
+      <a-box id="d1" position="30 0.5 45" height="1" width="1" depth="100" color="green" visible="false"></a-box>
+      <a-box id="d2" position="35 0.5 -5" height="1" width="11" depth="1" color="green" visible="false"></a-box>
+
+      <!--Operation theatre-->
+      <a-box id="o1" position="-50 0.5 -20" height="1" width="1" depth="60" color="green" visible="false"></a-box>
+      <a-box id="o2" position="-20 0.5 -50" height="1" width="61" depth="1" color="green" visible="false"></a-box>
+      <a-box id="o3" position="10 0.5 -55" height="1" width="1" depth="10" color="green" visible="false"></a-box>
+
+      <!--RestRoom-->
+      <a-box id="rr1" position="-77.5 0.5 15" height="1" width="1" depth="10" color="green" visible="false"></a-box>
+
+
+
+
+
+       <a-camera position="0 2 110" wasd-controls="acceleration: 950">
+        <a-cursor></a-cursor>
+        </a-camera>
+
+
+
+        <!--Camera default-->
+        <!--
+        <a-camera position="0 2 110">
+        <a-cursor></a-cursor>
+        </a-camera>
+        -->
+        </a-scene>
+    </body></html>

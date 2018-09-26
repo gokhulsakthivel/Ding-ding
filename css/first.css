@@ -1,0 +1,147 @@
+*{
+  padding: 0;
+  margin:0px;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+.header-wrap h1{
+  text-align: center;
+    padding: 30vh 0px;
+    font-size: -webkit-xxx-large;
+    font-family: 'varela round',roboto;
+     background: #22d5ac;
+     color: white;
+}
+.header-wrap p{
+  text-align: center;
+
+    font-size: xx-large;
+    font-family: 'varela round',roboto;
+     background: #22d5ac;
+     color: white;
+}
+.top-wrap a{
+  color: #551a8b;
+position: absolute;
+top: 70px;
+right: 100px;
+padding: 20px 40px;
+background: #42f5cc;
+text-transform: uppercase;
+letter-spacing: 0.4em;
+border-radius: 15px;
+}
+.aside-wrap1 h2{
+    padding: 60px 0px;
+    text-align: center;
+    width: 30%;
+    font-family: 'lato',roboto;
+    float: left;
+    background: #551a8b;
+    background-image: url(../img/12.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    margin: 0% 1.6667%;
+    color: white;
+}
+.aside-wrap2 h2{
+  padding: 60px 0px;
+    text-align: center;
+    width: 30%;
+    font-family: 'lato',roboto;
+    float: left;
+    background: #551a8b;
+    background-image: url(../img/13.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0% 1.6667%;
+    color: white;
+}
+.aside-wrap3 h2{
+  padding: 60px 0px;
+    text-align: center;
+    width: 30%;
+    font-family: 'lato',roboto;
+    float: left;
+    margin: 0% 1.6667%;
+    background: #551a8b;
+    background-image: url(../img/11.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: white;
+
+}
+
+.logo-wrap img{
+  width: 70%;
+  padding: 0% 15%;
+}
+
+
+.final-wrap{
+clear: both;
+}
+.final-wrap h1{
+  font-family: 'roboto',varela round;
+  text-align: center;
+  background-color: lightgrey;
+  background-image: url(../img/14.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  padding:200px 0px;
+  border-radius: 10px;
+  font-size: 25px;
+  clear: both;
+}
+.final-wrap span{
+  background: #551a8b;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  clear: both;
+}
+.final-wrap a{
+  text-decoration: none;
+  clear: both;
+}
+hr{
+  color: white;
+  width: 70%;
+  margin: auto;
+}
+.footer-pos{
+  /*background-image:url(img/1.jpg);*/
+  background-color: #22d5ac;
+  color: white;
+  padding: 30px;
+}
+.footer-wrap img{
+  width: 40%;
+  padding: 0% 30%;
+}
+.footer-wrap p{
+  text-align: center;
+  padding: 10px 0px 10px 0px;
+}
+.footer-wrap h1{
+  text-align: center;
+  padding: 10px 0px 20px 0px;
+}
+.name-pos{
+  width: 33.33%;
+  float: left;
+  text-align: center;
+  padding: 20px 0px;
+}
